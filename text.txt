@@ -1,5 +1,3 @@
-PsuedoCode:
-
 what we need:
 box, prisoner, maze,
 
