@@ -1,0 +1,13 @@
+PsuedoCode:
+
+what we need:
+box, prisoner, maze,
+
+box: id, prisonerNum
+construct: id based on for loop, prisonerNum random
+
+prisoner: id; int, hasFoundBox; bool
+method: search random box; void
+
+maze: list of 100 boxes, list of nums already created that cant be used
+method: create random list of boxes with different prisoner numbers
