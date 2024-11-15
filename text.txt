@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 PsuedoCode:
 
+=======
+>>>>>>> eb833c1213191909126dd5a0325ada4aec62b79a
 what we need:
 box, prisoner, maze,
 
@@ -10,4 +13,8 @@ prisoner: id; int, hasFoundBox; bool
 method: search random box; void
 
 maze: list of 100 boxes, list of nums already created that cant be used
+<<<<<<< HEAD
 method: create random list of boxes with different prisoner numbers
+=======
+method: create random list of boxes with different prisoner numbers
+>>>>>>> eb833c1213191909126dd5a0325ada4aec62b79a
