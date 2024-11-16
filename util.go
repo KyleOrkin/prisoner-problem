@@ -9,10 +9,10 @@ func UncheckBoxes(boxes []Box) {
 }
 
 // takes prisoner reference and takes maze object and does a random check and
-func DumbCheck(x Prisoner, y []Box) {
+func DumbCheck(x Prisoner, y MyMaze) {
 
-	for i := 0; i < len(y); i++ {
-		fmt.Println(y[i])
+	for i := 0; i < len(y.mazes); i++ {
+		fmt.Println(y.mazes[i])
 	}
 
 }

@@ -15,6 +15,10 @@ type Prisoner struct {
 	hasNum bool
 }
 
+type MyMaze struct {
+	mazes []Box
+}
+
 // contains checks if a slice contains a specific integer
 func contains(slice []int, item int) bool {
 	for _, v := range slice {
@@ -25,7 +29,7 @@ func contains(slice []int, item int) bool {
 	return false
 }
 
-func Maze() []Box {
+func CreateMaze() []Box {
 	// create an array of 100 boxes with an id and random prisoner number
 	boxes := make([]Box, 100)
 	usedRandomNums := make([]int, 100)
