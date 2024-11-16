@@ -10,6 +10,11 @@ type Box struct {
 	hasBeenChecked bool
 }
 
+type Prisoner struct {
+	id     int
+	hasNum bool
+}
+
 // contains checks if a slice contains a specific integer
 func contains(slice []int, item int) bool {
 	for _, v := range slice {
@@ -20,18 +25,12 @@ func contains(slice []int, item int) bool {
 	return false
 }
 
-func maze() {
+func Maze() []Box {
 	// create an array of 100 boxes with an id and random prisoner number
 	boxes := make([]Box, 100)
 	usedRandomNums := make([]int, 100)
 	for i := 0; i < 100; i++ {
-		// generate a random number between 1 and 100
-		// check if the number has already been used
-		// if it has, generate a new number
-		// if it hasn't, add it to the usedRandomNums array
-		// and assign it to the prisonerNum of the box
-		// assign the id of the box to the id of the box
-		// and set hasBeenChecked to false
+
 		randNum := rand.Intn(100) + 1
 		for {
 			if !contains(usedRandomNums, randNum) {
@@ -45,4 +44,5 @@ func maze() {
 		}
 
 	}
+	return boxes
 }
